@@ -7,11 +7,8 @@
 //
 
 #import "ViewController.h"
-#import "TXFPSCalculator.h"
 
 @interface ViewController ()
-
-@property (strong, nonatomic) TXFPSCalculator *calculator;
 
 @end
 
@@ -24,8 +21,6 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
-    self.calculator = [[TXFPSCalculator calculator] start];
 }
 
 
