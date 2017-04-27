@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-#import "TXFPSCalculator.h"
+
+#ifdef DEBUG
+    #import "TXFPSCalculator.h"
+#endif
 
 @interface AppDelegate ()
 
@@ -19,8 +22,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     [self.window makeKeyAndVisible];
-    
+#ifdef DEBUG
     [[TXFPSCalculator calculator] start];
+#endif
     return YES;
 }
 
