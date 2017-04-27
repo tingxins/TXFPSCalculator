@@ -24,8 +24,15 @@
 
 @implementation TXFPSCalculator
 
+static TXFPSCalculator *_fpsCalculator;
+
 + (instancetype)calculator {
-    return [[TXFPSCalculator alloc] init];
+    if (_fpsCalculator) return _fpsCalculator;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        _fpsCalculator = [[TXFPSCalculator alloc] init];
+    });
+    return _fpsCalculator;
 }
 
 - (instancetype)init {
@@ -38,16 +45,18 @@
 
 - (void)addFPSLabel {
     CGSize screenS = [UIScreen mainScreen].bounds.size;
-    CGFloat fpsLabelW = 80;
+    CGFloat fpsLabelW = 60;
     CGFloat fpsLabelH = 20;
-    UILabel *fpsLabel = [[UILabel alloc] initWithFrame:CGRectMake(screenS.width - fpsLabelW, screenS.height - fpsLabelH, fpsLabelW, fpsLabelH)];
+    UILabel *fpsLabel = [[UILabel alloc] initWithFrame:CGRectMake(screenS.width - fpsLabelW, fpsLabelH, fpsLabelW, fpsLabelH)];
     _fpsLabel = fpsLabel;
+    _fpsLabel.font = [UIFont systemFontOfSize:14];
     _fpsLabel.backgroundColor = [UIColor redColor];
     _fpsLabel.textColor = [UIColor whiteColor];
     _fpsLabel.textAlignment = NSTextAlignmentCenter;
-    _fpsLabel.layer.cornerRadius = 5;
+    _fpsLabel.layer.cornerRadius = 10;
     _fpsLabel.layer.masksToBounds = YES;
     _fpsLabel.text = @"0 FPS";
+    
     [[UIApplication sharedApplication].keyWindow addSubview:_fpsLabel];
 }
 
