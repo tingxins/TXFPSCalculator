@@ -15,8 +15,8 @@
 		972D0D1D1DCC974A00E5D9AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 972D0D1B1DCC974A00E5D9AF /* LaunchScreen.storyboard */; };
 		972D0D281DCC974A00E5D9AF /* TXFPSCalculatorDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 972D0D271DCC974A00E5D9AF /* TXFPSCalculatorDemoTests.m */; };
 		972D0D331DCC974A00E5D9AF /* TXFPSCalculatorDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 972D0D321DCC974A00E5D9AF /* TXFPSCalculatorDemoUITests.m */; };
-		972D0D4C1DCC976E00E5D9AF /* TXFPSCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 972D0D491DCC976E00E5D9AF /* TXFPSCalculator.m */; };
-		972D0D4D1DCC976E00E5D9AF /* TXTimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 972D0D4B1DCC976E00E5D9AF /* TXTimerProxy.m */; };
+		97E5818A1EB1D0CF00FC36B3 /* TXTimerProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E581881EB1D0CF00FC36B3 /* TXTimerProxy.m */; };
+		97E5818B1EB1D0CF00FC36B3 /* TXFPSCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 97E581891EB1D0CF00FC36B3 /* TXFPSCalculator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +53,10 @@
 		972D0D2E1DCC974A00E5D9AF /* TXFPSCalculatorDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TXFPSCalculatorDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		972D0D321DCC974A00E5D9AF /* TXFPSCalculatorDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TXFPSCalculatorDemoUITests.m; sourceTree = "<group>"; };
 		972D0D341DCC974A00E5D9AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		972D0D481DCC976E00E5D9AF /* TXFPSCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXFPSCalculator.h; sourceTree = "<group>"; };
-		972D0D491DCC976E00E5D9AF /* TXFPSCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXFPSCalculator.m; sourceTree = "<group>"; };
-		972D0D4A1DCC976E00E5D9AF /* TXTimerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTimerProxy.h; sourceTree = "<group>"; };
-		972D0D4B1DCC976E00E5D9AF /* TXTimerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTimerProxy.m; sourceTree = "<group>"; };
+		97E581861EB1D0CF00FC36B3 /* TXFPSCalculator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXFPSCalculator.h; sourceTree = "<group>"; };
+		97E581871EB1D0CF00FC36B3 /* TXTimerProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXTimerProxy.h; sourceTree = "<group>"; };
+		97E581881EB1D0CF00FC36B3 /* TXTimerProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXTimerProxy.m; sourceTree = "<group>"; };
+		97E581891EB1D0CF00FC36B3 /* TXFPSCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXFPSCalculator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,7 +107,7 @@
 		972D0D0C1DCC974900E5D9AF /* TXFPSCalculatorDemo */ = {
 			isa = PBXGroup;
 			children = (
-				972D0D471DCC976E00E5D9AF /* TXFPSCalculator */,
+				97E581851EB1D0CF00FC36B3 /* TXFPSCalculator */,
 				972D0D101DCC974900E5D9AF /* AppDelegate.h */,
 				972D0D111DCC974900E5D9AF /* AppDelegate.m */,
 				972D0D131DCC974900E5D9AF /* ViewController.h */,
@@ -147,13 +147,13 @@
 			path = TXFPSCalculatorDemoUITests;
 			sourceTree = "<group>";
 		};
-		972D0D471DCC976E00E5D9AF /* TXFPSCalculator */ = {
+		97E581851EB1D0CF00FC36B3 /* TXFPSCalculator */ = {
 			isa = PBXGroup;
 			children = (
-				972D0D481DCC976E00E5D9AF /* TXFPSCalculator.h */,
-				972D0D491DCC976E00E5D9AF /* TXFPSCalculator.m */,
-				972D0D4A1DCC976E00E5D9AF /* TXTimerProxy.h */,
-				972D0D4B1DCC976E00E5D9AF /* TXTimerProxy.m */,
+				97E581861EB1D0CF00FC36B3 /* TXFPSCalculator.h */,
+				97E581871EB1D0CF00FC36B3 /* TXTimerProxy.h */,
+				97E581881EB1D0CF00FC36B3 /* TXTimerProxy.m */,
+				97E581891EB1D0CF00FC36B3 /* TXFPSCalculator.m */,
 			);
 			path = TXFPSCalculator;
 			sourceTree = "<group>";
@@ -294,11 +294,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97E5818A1EB1D0CF00FC36B3 /* TXTimerProxy.m in Sources */,
 				972D0D151DCC974900E5D9AF /* ViewController.m in Sources */,
 				972D0D121DCC974900E5D9AF /* AppDelegate.m in Sources */,
+				97E5818B1EB1D0CF00FC36B3 /* TXFPSCalculator.m in Sources */,
 				972D0D0F1DCC974900E5D9AF /* main.m in Sources */,
-				972D0D4C1DCC976E00E5D9AF /* TXFPSCalculator.m in Sources */,
-				972D0D4D1DCC976E00E5D9AF /* TXTimerProxy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -536,6 +536,7 @@
 				972D0D391DCC974A00E5D9AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		972D0D3A1DCC974A00E5D9AF /* Build configuration list for PBXNativeTarget "TXFPSCalculatorDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -544,6 +545,7 @@
 				972D0D3C1DCC974A00E5D9AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		972D0D3D1DCC974A00E5D9AF /* Build configuration list for PBXNativeTarget "TXFPSCalculatorDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -552,6 +554,7 @@
 				972D0D3F1DCC974A00E5D9AF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
