@@ -35,4 +35,10 @@ CocoaPods is a dependency manager for Objective-C, which automates and simplifie
 
 `TXFPSCalculator` is available under the MIT license. See the LICENSE file for more info.
 
+## Ad
+
+Welcome to my Official Account of WeChat.
+
+![wechat-qrcode](http://image.tingxins.cn/adv/wechat-qrcode.jpg)
+
 
